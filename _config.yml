@@ -1,0 +1,31 @@
+title: "Ruslan's Infra Blog"
+description: "Notes on Kubernetes, AWS, and ML infrastructure"
+baseurl: ""              # leave empty for username.github.io; use "/repo-name" for project sites
+url: "https://yourusername.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Theme (GitHub Pages supports a curated list natively, no Action needed)
+theme: minima
+
+# Plugins (must be on GitHub Pages' whitelist if building natively)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Pagination (if using jekyll-paginate)
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+A few important notes:
+
+baseurl — this is the one people get wrong most often. If your repo is username.github.io, leave it "". If it's a project repo (e.g. my-blog), set it to "/my-blog" so internal links resolve correctly.
+theme: minima — this is GitHub Pages' default built-in theme; you don't need to install anyth
