@@ -25,7 +25,3 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-A few important notes:
-
-baseurl — this is the one people get wrong most often. If your repo is username.github.io, leave it "". If it's a project repo (e.g. my-blog), set it to "/my-blog" so internal links resolve correctly.
-theme: minima — this is GitHub Pages' default built-in theme; you don't need to install anyth
